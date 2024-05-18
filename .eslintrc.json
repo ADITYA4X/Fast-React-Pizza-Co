@@ -1,3 +1,20 @@
 {
-  "extends": "react-app"
+  "extends": [
+    "eslint:recommend",
+    "plugin:react/jsx-runtime",
+    "plugin:react/recommended",
+    "plugin:prettier/recommended",
+    "prettier"
+  ],
+  "plugins": ["react"]
+
+  // "extends": ["react-app"],
+
+  // "plugins": ["react/recommended"],
+  // "rules": {
+  //   "react/jsx-uses-react": "error",
+  //   "react/jsx-uses-vars": "error"
+  // }
 }
+
+// eslint-disable-next-line
