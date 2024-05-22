@@ -2,6 +2,7 @@
 import { useState } from "react";
 
 // https://uibakery.io/regex-library/phone-number
+
 // eslint-disable-next-line
 const isValidPhone = (str) =>
   /^\+?\d{1,4}?[-.\s]?\(?\d{1,3}?\)?[-.\s]?\d{1,4}[-.\s]?\d{1,4}[-.\s]?\d{1,9}$/.test(
@@ -34,6 +35,7 @@ const fakeCart = [
 
 function CreateOrder() {
   // const [withPriority, setWithPriority] = useState(false);
+  
   // eslint-disable-next-line
   const cart = fakeCart;
 
@@ -43,19 +45,19 @@ function CreateOrder() {
 
       <form>
         <div>
-          <label>First Name</label>
+          <label>First Name : </label>
           <input type="text" name="customer" required />
         </div>
 
         <div>
-          <label>Phone number</label>
+          <label>Phone number : </label>
           <div>
             <input type="tel" name="phone" required />
           </div>
         </div>
 
         <div>
-          <label>Address</label>
+          <label>Address : </label>
           <div>
             <input type="text" name="address" required />
           </div>
